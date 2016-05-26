@@ -9,8 +9,11 @@
  * Question 1
  * Create an array of image sources. Use image1.png, image2.png, and image3.png as the array values.
  */
-
 // Your code here
+
+var q1 = ['image1.png','image2.png','image3.png'];
+console.log("Question 1 " + q1);
+
 
 /**
  * Question 2
@@ -18,6 +21,8 @@
  */
 
 // Your code here
+var q2 = q1;
+console.log("Question 2 " + q2);
 
 /**
  * Question 3
@@ -25,6 +30,8 @@
  */
 
 // Your code here
+var q3 = q1.length;
+console.log("Question 3 " + q3);
 
 /**
  * Question 4
@@ -33,7 +40,8 @@
 
 
 // Your code here
-
+var q4 = q1.slice(-1).pop();
+console.log("Question 4 " + q4);
 
 // ____________________________________________________________________________
 
@@ -51,6 +59,12 @@ The end result should be an array of numbers with values 2,3,4,5
  */
 
 // Your code here
+var q1 =  [1,2,3,4];
+q1.forEach(function(i,val) {
+  q1[val] = i+1;
+});
+
+console.log("question 1 " + q1 );
 
 
 /**
@@ -60,3 +74,15 @@ The end result should be an array of numbers with values 2,3,4,5
 
 
 // Your code here
+var total= 0;
+var q1 = [1,2,3,4];
+for (var i=0; i<q1.length; i++) {
+  total+= q1[i];
+}
+
+var q2 = total / q1.length;
+
+console.log("question 2 " + q2);
+
+
+
